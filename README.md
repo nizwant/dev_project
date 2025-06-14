@@ -30,4 +30,10 @@ In this task we have to evaluate various feature selection methods on synthetics
 
 ### Description
 
+Evaluate the overall quality of selected clustering algorithms on a wide range of benchmark datasets
+
 ### Plan
+
+- Use benchmark suite for clustering
+- don't use birch1 or 2 because its to big
+- maybe use Lukasz code with my own modification to improve it 
