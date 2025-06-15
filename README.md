@@ -23,7 +23,7 @@ In this task we have to evaluate various feature selection methods on synthetics
     - all features
     - set obtained from selection methods
     - only relevant features
-    - features from pca, mds, tsne
+    - features from PCA, MDS, tSNE
 - compare them using accuracy, precision, recall, F1 score
 
 ## Exercise 2
@@ -36,4 +36,4 @@ Evaluate the overall quality of selected clustering algorithms on a wide range o
 
 - Use benchmark suite for clustering
 - don't use birch1 or 2 because its to big
-- maybe use Lukasz code with my own modification to improve it 
+- maybe use Lukasz code with my own modification to improve it
