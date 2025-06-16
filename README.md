@@ -17,6 +17,7 @@ In this task we have to evaluate various feature selection methods on synthetics
     - bic
     - mutual information
     - correlation
+    - random forest
 - [ ] apply them to generated data
 - [ ] use a measure to of success
 - [ ] build model SVM and Random Forest on
