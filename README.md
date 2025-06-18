@@ -12,13 +12,13 @@ In this task we have to evaluate various feature selection methods on synthetics
 - [x]  Add irrelevant features, redundant features, correlated features, noisy features etc.
 - [x] create description of data generation process
 - [x] write a function to do it, at the beginning do it in the notebook
-- [ ] select at least 3 feature selection methods (at least one filter and wrapper)
+- [x] select at least 3 feature selection methods (at least one filter and wrapper)
     - lasso
     - bic
     - mutual information
     - correlation
     - random forest
-- [ ] apply them to generated data
+- [x] apply them to generated data
 - [ ] use a measure to of success
 - [ ] build model SVM and Random Forest on
     - all features
