@@ -32,7 +32,7 @@ def generate_column_partition(n, k, random_state, min_first=2):
     return partition
 
 
-def generate_dataset(n_samples=1000, n_features=20, random_state=213):
+def generate_dataset(n_samples=1000, n_features=20, random_state=21, silent=True):
 
     partition = generate_column_partition(n_features, 5, random_state=random_state)
 
@@ -59,7 +59,6 @@ def generate_dataset(n_samples=1000, n_features=20, random_state=213):
         index = noise_index_start + i
         X[:, index] += np.random.uniform(low=2.0, high=2.0, size=n_samples)
 
-    labels = ["informative", "redundant", "correlated", "noise", "irrelevant"]
     idx = np.cumsum([0] + partition)
     feature_types = {
         "informative": list(range(idx[0], idx[1])),
@@ -69,9 +68,11 @@ def generate_dataset(n_samples=1000, n_features=20, random_state=213):
         "pure_noise": list(range(idx[4], idx[5])),
     }
 
-    print(partition)
-    print()
+    if not silent:
+        print(partition)
+        print()
 
-    for key, val in feature_types.items():
-        print(key, val)
+        for key, val in feature_types.items():
+            print(key, val)
+
     return X, y, feature_types
